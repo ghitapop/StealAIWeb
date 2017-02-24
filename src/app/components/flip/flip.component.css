@@ -1,0 +1,36 @@
+body {
+  font-size: 0;
+}
+.flip {
+  display: inline-block;
+  margin: 1px;
+  position: relative;
+  width: 40px;
+  -webkit-perspective: 100;
+}
+.faces {
+  height: 100%;
+  position: relative;
+  -webkit-transform-style: flat;
+  -webkit-transition: .25s 1s ease-in-out;
+}
+.faces div {
+  height: 30px;
+  -webkit-backface-visibility: hidden;
+}
+.front {
+  background: #f66;
+}
+.back {
+  background: #6cf;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateY(-180deg);
+}
+.flip:hover .faces {
+  -webkit-transform: rotateY(-180deg);
+  -webkit-transition: 0s ease-in-out;
+}

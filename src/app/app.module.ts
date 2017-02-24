@@ -7,11 +7,13 @@ import { AlertModule } from 'ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { CubeComponent } from './components/cube/cube.component';
+import { FlipComponent } from './components/flip/flip.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CubeComponent
+    CubeComponent,
+    FlipComponent
   ],
   imports: [
     BrowserModule,
