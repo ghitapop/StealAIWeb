@@ -3,23 +3,24 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AlertModule } from 'ng2-bootstrap';
-
 import { AppComponent } from './app.component';
 import { CubeComponent } from './components/cube/cube.component';
 import { FlipComponent } from './components/flip/flip.component';
+import { SpeechRecognizerComponent } from './components/sound/speech-recognizer/speech-recognizer.component';
+import { AiComponent } from './components/ai/ai.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CubeComponent,
-    FlipComponent
+    FlipComponent,
+    SpeechRecognizerComponent,
+    AiComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    AlertModule.forRoot()
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

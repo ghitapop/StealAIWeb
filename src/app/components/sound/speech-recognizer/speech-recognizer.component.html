@@ -1,0 +1,6 @@
+<button (click)="captureSound()">Record</button>
+<button (click)="stopCaptureSound()">Stop Recording</button>
+
+<div *ngIf="audio.audioURL">
+  <audio id="audioId" [src]="audio.audioURL" controls></audio>
+</div>

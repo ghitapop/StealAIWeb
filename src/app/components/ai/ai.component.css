@@ -1,0 +1,36 @@
+.ai-container {
+  grid-template-areas:
+    "header"
+    "section"
+    "footer";
+  grid-template-rows:
+    minmax(50px, 1fr)
+    12fr
+    minmax(50px, 1fr);
+  padding: 5px 5px 5px 3px;
+}
+
+header {
+  grid-area: header;
+  border: solid 1px #FFFFFF;
+  border-radius: 13px;
+  padding: 5px 5px 5px 5px;
+}
+
+section {
+  grid-area: section;
+  border: solid 1px #FFFFFF;
+  border-radius: 13px;
+  padding: 5px 5px 5px 5px;
+
+}
+
+footer {
+  grid-area: footer;
+  border: solid 1px #FFFFFF;
+  border-radius: 13px;
+  padding: 5px 5px 5px 5px;
+}
+
+
+
